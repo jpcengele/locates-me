@@ -6,8 +6,8 @@ import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import { useSearchParams } from 'next/navigation';
 
-// API Configuration
-const API_URL = 'https://7eee371c1acf7f4c-169-150-201-134.serveousercontent.com';
+// API Configuration - use relative path for Vercel, or env var for local dev
+const API_URL = process.env.NEXT_PUBLIC_API_URL || '';
 
 // Fix Leaflet icon issue in Next.js
 const icon = L.icon({
