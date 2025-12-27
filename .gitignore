@@ -38,3 +38,4 @@ npm-debug.log*
 
 # Tunnel logs
 *_tunnel.log
+.vercel
